@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph25"
+    app:startDestination="@id/First25Fragment">
+
+    <fragment
+        android:id="@+id/First25Fragment"
+        android:name="com.example.myapp2.First25Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first25">
+
+        <action
+            android:id="@+id/action_First25Fragment_to_Second25Fragment"
+            app:destination="@id/Second25Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second25Fragment"
+        android:name="com.example.myapp2.Second25Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second25">
+
+        <action
+            android:id="@+id/action_Second25Fragment_to_First25Fragment"
+            app:destination="@id/First25Fragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Soil Moisture Icon -->
+    <ImageView
+        android:id="@+id/soil_moisture_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_moderate"
+        android:contentDescription="Soil Moisture Icon"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Soil Moisture Value -->
+    <TextView
+        android:id="@+id/soil_moisture_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soil Moisture: --"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:background="@drawable/textview_background"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Soil Condition -->
+    <TextView
+        android:id="@+id/soil_condition_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soil Condition: --"
+        android:textSize="18sp"
+        android:textColor="#FF5722"
+        android:background="@drawable/textview_background"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Current Date and Time -->
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Date and Time: --"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:background="@drawable/textview_background"
+        android:padding="12dp"
+        android:gravity="center"/>
+
+</LinearLayout>

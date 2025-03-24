@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph24"
+    app:startDestination="@id/First24Fragment">
+
+    <fragment
+        android:id="@+id/First24Fragment"
+        android:name="com.example.myapp2.First24Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first24">
+
+        <action
+            android:id="@+id/action_First24Fragment_to_Second24Fragment"
+            app:destination="@id/Second24Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second24Fragment"
+        android:name="com.example.myapp2.Second24Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second24">
+
+        <action
+            android:id="@+id/action_Second24Fragment_to_First24Fragment"
+            app:destination="@id/First24Fragment" />
+    </fragment>
+</navigation>

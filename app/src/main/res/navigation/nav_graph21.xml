@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph21"
+    app:startDestination="@id/First21Fragment">
+
+    <fragment
+        android:id="@+id/First21Fragment"
+        android:name="com.example.myapp2.First21Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first21">
+
+        <action
+            android:id="@+id/action_First21Fragment_to_Second21Fragment"
+            app:destination="@id/Second21Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second21Fragment"
+        android:name="com.example.myapp2.Second21Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second21">
+
+        <action
+            android:id="@+id/action_Second21Fragment_to_First21Fragment"
+            app:destination="@id/First21Fragment" />
+    </fragment>
+</navigation>

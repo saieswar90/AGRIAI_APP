@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/container_background"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/visualizeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Visualize"
+            android:background="@drawable/button_gradient"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/myDataButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Data"
+            android:background="@drawable/button_gradient"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:background="@drawable/button_gradient"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Add and Delete Buttons -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Record"
+        android:background="@drawable/button_gradient"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Selected"
+        android:background="@drawable/button_gradient"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_background"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+</LinearLayout>

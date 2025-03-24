@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph26"
+    app:startDestination="@id/First26Fragment">
+
+    <fragment
+        android:id="@+id/First26Fragment"
+        android:name="com.example.myapp2.First26Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first26">
+
+        <action
+            android:id="@+id/action_First26Fragment_to_Second26Fragment"
+            app:destination="@id/Second26Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second26Fragment"
+        android:name="com.example.myapp2.Second26Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second26">
+
+        <action
+            android:id="@+id/action_Second26Fragment_to_First26Fragment"
+            app:destination="@id/First26Fragment" />
+    </fragment>
+</navigation>

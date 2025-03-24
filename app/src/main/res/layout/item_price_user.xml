@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/container_backgroundm"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commodity"
+        android:textStyle="bold"
+        android:textColor="#007BFF"/>
+
+    <TextView
+        android:id="@+id/variety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variety"
+        android:textColor="#28A745"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/maxPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Max: ₹0"
+            android:textColor="#DC3545"/>
+
+        <TextView
+            android:id="@+id/avgPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Avg: ₹0"
+            android:textColor="#FFA500"/>
+
+        <TextView
+            android:id="@+id/minPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Min: ₹0"
+            android:textColor="#28A745"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Crop Name -->
+    <EditText
+        android:id="@+id/cropName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Crop Name"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Year -->
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:inputType="number"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tractor Rent Cost -->
+    <EditText
+        android:id="@+id/tractorRentCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tractor Rent Cost"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Labourer Cost -->
+    <EditText
+        android:id="@+id/labourerCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Labourer Cost"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Fertilizer Cost -->
+    <EditText
+        android:id="@+id/fertilizerCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fertilizer Cost"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Pesticide Cost -->
+    <EditText
+        android:id="@+id/pesticideCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesticide Cost"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Harvesting Cost -->
+    <EditText
+        android:id="@+id/harvestingCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harvesting Cost"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Amount Sold -->
+    <EditText
+        android:id="@+id/amountSold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount Sold"
+        android:inputType="numberDecimal"
+        android:background="@drawable/text_input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

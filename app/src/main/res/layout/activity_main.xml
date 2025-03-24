@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/ic_intro1"> <!-- Add background image here -->
+
+    <!-- Your original content layout below -->
+    <!-- Top Section: Date, Time, Day, and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/date_time_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date, Time, Day"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Agriculture"
+            android:textSize="24sp"
+            android:textColor="#007BFF"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Middle Section: Horizontal ScrollView with Containers -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="80dp">
+
+            <!-- Container 1: Plant Health -->
+
+            <!-- Container 2: Help -->
+            <LinearLayout
+                android:id="@+id/plant_health_container"
+                android:layout_width="120dp"
+                android:layout_height="166dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/container_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:contentDescription="@string/plant_icon_description"
+                    android:src="@drawable/ic_plant_health" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Plant Health"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/market_container"
+                android:layout_width="120dp"
+                android:layout_height="169dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/container_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:contentDescription="@string/help_icon_description"
+                    android:src="@drawable/ic_market_price" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Market Prices"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/data_container"
+                android:layout_width="120dp"
+                android:layout_height="169dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/container_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:contentDescription="@string/help_icon_description"
+                    android:src="@drawable/ic_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="My Data"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/help_container"
+                android:layout_width="120dp"
+                android:layout_height="169dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/container_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_help"
+                    android:contentDescription="@string/help_icon_description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Help"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Container 3: LED Control -->
+            <LinearLayout
+                android:id="@+id/led_control_container"
+                android:layout_width="120dp"
+                android:layout_height="169dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/container_background"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_led_control"
+                    android:contentDescription="@string/led_icon_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LED Control"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Container 4: Dashboard -->
+            <LinearLayout
+                android:id="@+id/dashboard_container"
+                android:layout_width="120dp"
+                android:layout_height="169dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/container_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_dashboard"
+                    android:contentDescription="@string/dashboard_icon_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI-Driven Crop Disease Prediction and Management System"
+        android:textSize="24sp"
+        android:textColor="#007BFF"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Bottom Section: Horizontal Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/temperature_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Temperature"
+            android:textSize="12sp"
+            android:textColor="#007BFF" />
+
+        <Button
+            android:id="@+id/soil_moisture_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Soil Moisture"
+            android:textColor="#007BFF" />
+
+        <Button
+            android:id="@+id/detection_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Detection"
+            android:textColor="#007BFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+    <Button
+        android:id="@+id/start_service_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#007BFF"
+        android:text="Start Service"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/stop_service_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#FF5722"
+        android:text="Stop Service"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"/>
+</LinearLayout>
+</LinearLayout>
