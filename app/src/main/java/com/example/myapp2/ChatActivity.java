@@ -48,7 +48,7 @@ public class ChatActivity extends AppCompatActivity {
                 .build();
         apiService = retrofit.create(ApiService.class);
 
-        // Fetch existing messages
+        // Fetch existing messagesc
         fetchMessages();
 
         // Start periodic polling

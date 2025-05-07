@@ -29,16 +29,26 @@
         android:padding="12dp"
         android:layout_marginTop="16dp"/>
 
-    <!-- Predict Button -->
+    <Button
+        android:id="@+id/realImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Real Image"
+        android:backgroundTint="#dc3545"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
     <Button
         android:id="@+id/predict_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Predict"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#28a745"
-        android:textColor="#FFFFFF"
         android:padding="12dp"
-        android:layout_marginTop="16dp"/>
+        android:text="Predict"
+        android:textColor="#FFFFFF" />
+
 
     <!-- Result Text -->
     <TextView

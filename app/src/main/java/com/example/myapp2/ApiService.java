@@ -15,6 +15,20 @@ import retrofit2.http.Query;
 import java.util.List;
 
 public interface ApiService {
+
+    @GET("/api/districts")
+    Call<List<String>> getDistricts();
+
+    @GET("/api/markets")
+    Call<List<String>> getMarketsByDistrict(@Query("district") String district);
+    @GET("/api/commodities")
+    Call<List<String>> getCommoditiesByMarket(@Query("market") String market);
+    @GET("/api/pricesm")
+    Call<List<Price1>> getPricesByFilters(
+            @Query("district") String district,
+            @Query("market") String market
+    );
+
     @GET("/api/crops")
     Call<List<Crop>> getCrops();
 
@@ -28,17 +42,6 @@ public interface ApiService {
     Call<Void> deleteCrop(@Path("id") String id);
 
     // Existing Tomato Disease Prediction
-    @GET("/api/districts")
-    Call<List<String>> getDistricts();
-
-    @GET("/api/markets")
-    Call<List<String>> getMarketsByDistrict(@Query("district") String district);
-
-    @GET("/api/prices")
-    Call<List<Price1>> getPricesByFilters(
-            @Query("district") String district,
-            @Query("market") String market
-    );
 
     @Multipart
     @POST("/predict_disease")

@@ -11,6 +11,7 @@
     <string name="help_icon_description">Help icon</string>
     <string name="led_icon_description">LED icon</string>
     <string name="dashboard_icon_description">Dashboard icon</string>
+    <string name="logo">Welcome to AGRI_AI</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/ic_intro1"> <!-- Add background image here -->
+    > <!-- Add background image here -->
 
     <!-- Your original content layout below -->
     <!-- Top Section: Date, Time, Day, and Title -->
@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@drawable/rounded_shadow_box">
         <TextView
             android:id="@+id/date_time_day"
             android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
             android:text="Date, Time, Day"
             android:textSize="16sp"
             android:textColor="#333333"
+
             android:textStyle="bold"/>
 
         <TextView
@@ -208,54 +210,73 @@
     </HorizontalScrollView>
     <TextView
         android:id="@+id/title1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="AI-Driven Crop Disease Prediction and Management System"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textColor="#007BFF"
-        android:background="@color/white"
         android:textStyle="bold"
-        android:layout_marginTop="8dp"/>
+        android:background="@drawable/rounded_shadow_box"
+        android:padding="16dp"
+        android:elevation="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
 
+
+    <!-- Bottom Section: Horizontal Navigation Bar -->
     <!-- Bottom Section: Horizontal Navigation Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#ffffff"
+        android:background="@drawable/rounded_shadow_box"
         android:elevation="4dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        >
 
         <Button
             android:id="@+id/temperature_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/rounded_shadow_box"
+
             android:text="Temperature"
             android:textSize="12sp"
-            android:textColor="#007BFF" />
+            android:textColor="#AEFF00"
+            android:maxLines="2"
+            android:gravity="center"
+            android:padding="4dp"/>
 
         <Button
             android:id="@+id/soil_moisture_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/rounded_shadow_box"
             android:text="Soil Moisture"
-            android:textColor="#007BFF" />
+            android:textSize="12sp"
+            android:textColor="#00F6FF"
+            android:maxLines="2"
+            android:gravity="center"
+            android:padding="4dp"/>
 
         <Button
             android:id="@+id/detection_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/rounded_shadow_box"
             android:text="Detection"
-            android:textColor="#007BFF" />
+            android:textSize="12sp"
+            android:textColor="#B71C1C"
+            android:maxLines="2"
+            android:gravity="center"
+            android:padding="4dp"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

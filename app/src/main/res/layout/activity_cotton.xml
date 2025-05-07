@@ -28,6 +28,15 @@
         android:textColor="#FFFFFF"
         android:padding="12dp"
         android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/realImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Real Image"
+        android:backgroundTint="#dc3545"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
 
     <!-- Predict Button -->
     <Button

@@ -67,7 +67,7 @@ public class DetectionActivity extends AppCompatActivity {
                     timestampTextView.setText("Last Updated: " + timestamp);
 
                     // Play alert sound if motion is detected and automatic mode is enabled
-                    if (motion.equals("NO_MOTION") && isAutomatic) {
+                    if (motion.equals("MOTION_DETECTED")) {
                         playAlertSound();
                     }
                 } else {

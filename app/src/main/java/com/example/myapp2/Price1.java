@@ -14,7 +14,6 @@ public class Price1 {
     private double avgPrice;
     private double minPrice;
 
-    // Getters for fields
     public String getCommodity() { return commodity; }
     public String getVariety() { return variety; }
     public double getMaxPrice() { return maxPrice; }
